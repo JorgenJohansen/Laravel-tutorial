@@ -61,25 +61,27 @@
                 <div class="title m-b-md">
                     Pizza List
                 </div>
-                <p> {{ $type }} - {{ $base }} - {{ $price }}NOK </p>
 
-                <!-- Control flow in blade -->
-                <!-- @if($price > 15))
-                    <p>This pizza is expensive</p>
+                
+                
 
-                @elseif($price < 5)
-                    <p>This is some cheap ass pizza</p>
-                @else
-                    <p>This pizza is normally prized</p>
-                @endif
+                @for($i = 0; $i < count($pizzas); $i++)
+                    <p>{{ $pizzas[$i]['type'] }}</p>
 
-                @unless($base === 'cheesy crust')
-                    <p>You don't have a cheesy crust</p>
-                @endunless
+                @endfor
 
-                @php
-                    echo "QWoop woop!";
-                @endphp -->
+                
+                @foreach($pizzas as $pizza)
+                    <div>
+                        {{ $pizza['type']}} -- {{ $pizza['base']}}
+                    </div>
+                @endforeach
+
+
+                <?php 
+                
+                ?>
+                
             </div>
         </div>
     </body>
