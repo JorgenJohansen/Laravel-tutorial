@@ -5,7 +5,7 @@
 // <p>This pizza is expensive</p>
 
 // @elseif($price < 5)
-// <p>This is some cheap ass pizza</p>
+// <p>This is some cheap pizza</p>
 // @else
 // <p>This pizza is normally prized</p>
 // @endif
