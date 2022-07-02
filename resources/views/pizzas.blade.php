@@ -8,7 +8,9 @@
         </div>
 
         
-        
+        <p>{{ $name }}</p>
+
+        <p>{{ $age }} </p>
 
         @for($i = 0; $i < count($pizzas); $i++)
             <p>{{ $pizzas[$i]['type'] }}</p>
