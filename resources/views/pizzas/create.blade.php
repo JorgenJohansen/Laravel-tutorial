@@ -4,6 +4,7 @@
 <div class="wrapper create-pizza">
     <h1>Create a New Pizza</h1>
     <form action="/pizzas" method="POST">
+        @csrf
         <label for="name">Your name:</label>
         <!-- type for HTML5, id for JS/CSS, name for post requests/php-->
         <input type="text" id="name" name="name">
