@@ -22,6 +22,12 @@
             <option value="thin & crispy">Thin & Crispy</option>
             <option value="thick">Thick</option>
         </select>
+
+        <fieldset>Extra toppings</fieldset>
+        <input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms <br />
+        <input type="checkbox" name="toppings[]" value="peppers">Peppers <br />
+        <input type="checkbox" name="toppings[]" value="garlic">Garlic <br />
+        <input type="checkbox" name="toppings[]" value="olives">Olives <br />
         <input type="submit" value="Order Pizza">
     </form>
 </div>
